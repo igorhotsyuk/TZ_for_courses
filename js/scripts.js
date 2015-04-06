@@ -25,6 +25,12 @@ $(document).ready(function() {
         infiniteLoop: false,
         hideControlOnEnd: true
     });
+    $( "#datepicker" ).datepicker();
+    $('#pass').blur(function() {
+        if($(this).val().length < 6){
+            alert("ent >6");
+        }
+    });
 
 
     // Configure/customize these variables.
