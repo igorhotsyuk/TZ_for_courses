@@ -1,6 +1,3 @@
-
-
-
 $(document).ready(function() {
     $('.menu-button').click(function () {
         $('.header-expend').slideDown();
@@ -19,8 +16,6 @@ $(document).ready(function() {
     }, function(){
         $(this).animate({"backgroundColor": "red"}, 400);
     });
-
-
     $('.bxslider').bxSlider({
         infiniteLoop: false,
         hideControlOnEnd: true
@@ -31,18 +26,12 @@ $(document).ready(function() {
             alert("ent >6");
         }
     });
-
-
     // Configure/customize these variables.
     var showChar = 111; // How many characters are shown by default
     var ellipsestext = "...";
     var moretext = "Read more";
-    var lesstext = "Show less";
-
-
     $('.more').each(function() {
         var content = $(this).html();
-
         if(content.length > showChar) {
             var c = content.substr(0, showChar);
             var h = content.substr(showChar, content.length - showChar);
@@ -51,14 +40,10 @@ $(document).ready(function() {
         }
 
     });
-
     var showChartoo = 220; // How many characters are shown by default
     var ellipsestext = "...";
     var moretext = "Read more";
-    var lesstext = "Show less";
-
-
-    $('.read-more').each(function() {
+      $('.read-more').each(function() {
         var content = $(this).html();
 
         if(content.length > showChartoo) {
@@ -69,16 +54,15 @@ $(document).ready(function() {
         }
 
     });
-
-    jQuery('.tabs .tab-links a').on('click', function(e)  {
-        var currentAttrValue = jQuery(this).attr('href');
-        // Show/Hide Tabs
-        jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
-        // Change/remove current tab to active
-        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
-
-        e.preventDefault();
-    });
+    //jQuery('.tabs .tab-links a').on('click', function(e)  {
+    //    var currentAttrValue = jQuery(this).attr('href');
+    //    // Show/Hide Tabs
+    //    jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+    //    // Change/remove current tab to active
+    //    jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+    //
+    //    e.preventDefault();
+    //});
     $('#clickMe').click(function(){
         $('#popupWrapper').show();
     });
