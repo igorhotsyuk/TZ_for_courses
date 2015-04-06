@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/jquery.bxslider.css"/>
+       <script src="js/jquery.dd.min.js"></script>
+
+
+
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+<div class="page">
+<div class="wrapper">
+<div class="header">
+    <div class="menu-button">
+        <a id="menu-but" ><img src="images/menu/menu_icon.png" alt=""/></a>
+    </div>
+    <div class="menu-nav">
+<ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">Store</a></li>
+    <li><a href="">Blog</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Contact</a></li>
+</ul>
+    </div>
+    <div class="account-button">
+        <a ><img src="images/menu/login_menu_icon.png" alt=""/></a>
+        <div class="epx-login-block">
+            <h1>Sing In</h1>
+    <ul class="form-list">
+        <li>
+            <label for="email_address" class="required">e-mail</label>
+            <div class="input-box">
+                <input type="text" name="email" id="email_address"  title="Email Address" class="long">
+            </div>
+        </li>
+        <li>
+            <label for="password" class="required">password</label>
+            <div class="input-box">
+                <input type="password" name="password" id="password"  title="password" >
+            </div>
+        </li>
+    </ul>
+            <button class="btn">Sing in</button>
+        </div>
+    </div>
+<div class="sn-login">
+    <ul>
+        <li><a href=""><img src="images/menu/g+_menu_icon.png" alt=""/></a></li>
+        <li><a href=""><img src="images/menu/t_menu_icon.png" alt=""/></a></li>
+        <li><a href=""><img src="images/menu/f_menu_icon.png" alt=""/></a></li>
+    </ul>
+    
+</div>
+<div class="search-icon">
+    <a href=""> <img src="images/menu/search_menu_icon.png" alt=""/></a>
+</div>
+</div><div class="header-expend">
+        <div class="side-menu">
+            <div class="side-menu-p1">
+            <ul>
+                <li id="home-id" onmouseout="querySelector('img').src='images/side_menu/home_icon.png'" onmouseover="querySelector('img')
+                .src='images/side_menu/home_icon_selected.png'" >
+                <a href="">
+                    <img  src="images/side_menu/home_icon.png" alt=""/>
+                    <span>Home</span>
+                    </a>
+                </li>
+                <li onmouseout="querySelector('img').src='images/side_menu/shop_icon.png'" onmouseover="querySelector('img')
+                .src='images/side_menu/shop_icon_selected.png'">
+                    <a href="">
+                    <img src="images/side_menu/shop_icon.png" alt=""/>
+                    <span>Store</span>
+                </a>
+                   </li>
+                <li onmouseout="querySelector('img').src='images/side_menu/note_icon.png'" onmouseover="querySelector('img')
+                .src='images/side_menu/note_icon_selected.png'">
+                    <a href="">
+                    <img src="images/side_menu/note_icon.png" alt=""/>
+                    <span>Blog</span>
+                </a>
+                </li>
+                <li onmouseout="querySelector('img').src='images/side_menu//users_icon.png'" onmouseover="querySelector('img')
+                .src='images/side_menu//users_icon_selected.png'"><a href="">
+                    <img src="images/side_menu/users_icon.png" alt=""/>
+                    <span>Community</span>
+                </a>
+                </li>
+                <li onmouseout="querySelector('img').src='images/side_menu/trophy_icon.png'" onmouseover="querySelector('img')
+                .src='images/side_menu/trophy_icon_selected.png'"><a href="">
+                <img src="images/side_menu/trophy_icon.png" alt=""/>
+                <span>Contest</span>
+            </a>
+                </li>
+                <li onmouseout="querySelector('img').src='images/side_menu/info_icon.png'" onmouseover="querySelector('img')
+                .src='images/side_menu/info_icon_selected.png'"><a href="">
+                    <img src="images/side_menu/info_icon.png" alt=""/>
+                    <span>About</span>
+                </a>
+                </li>
+                <li onmouseout="querySelector('img').src='images/side_menu/email_icon.png'" onmouseover="querySelector('img')
+                .src='images/side_menu/email_icon_selected.png'"><a href="">
+                    <img src="images/side_menu/email_icon.png" alt=""/>
+                    <span>Contact</span>
+                </a>
+                </li>
+            </ul>
+            </div>
+            <div class="contact-data">
+                <ul>
+                    <li><img src="images/contacts/phone_icon.png" alt=""/>
+
+                        <h1>(912) 555-1234 <br/>(912) 555-5678</h1>
+
+                        </li>
+                    <li>
+                        <img src="images/contacts/pointer_icon.png" alt=""/>
+                        <h1>1600 Pennsylvania <br/>Ave NW, Washington <br/> DC 20500, USA</h1>
+                    </li>
+                    </li>
+                    <li>
+                        <img src="images/contacts/email_icon.png" alt=""/>
+                        <h1>hello@website.com <br/>office@website.com</h1>
+                    </li>
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </div>
+<div class="sub-menu">
+    <ul>
+        <li class="sub-menu-li first">
+            <div class="sub-menu-part">
+                <ul>
+                    <li id="sub-menu-first-line"><a href=""> Tech </a><img src="images/side_menu/arrow.png" alt=""/></li>
+                    <li><a href="">Software & Apps</a></li>
+                    <li><a href="">Gadgets</a></li>
+                    <li><a href="">Mobile</a></li>
+                </ul>
+            </div>
+        </li>
+             <li style="height: 190px" class="sub-menu-li second">
+            <div class="sub-menu-part">
+                <ul>
+                    <li id="sub-menu-first-line"><a href=""> Entertaiment</a><img src="images/side_menu/arrow.png" alt=""/></li>
+                    <li><a href="">Film</a></li>
+                    <li><a href="">Gaming</a></li>
+                    <li><a href="">Music</a></li>
+                    <li><a href="">Sports</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="sub-menu-li third">
+            <div class="sub-menu-part">
+                <ul>
+                    <li id="sub-menu-first-line"><a href="">Business</a><img src="images/side_menu/arrow.png" alt=""/></li>
+                    <li><a href="">Jobs</a></li>
+                    <li><a href="">Marketing</a></li>
+                    <li><a href="">Media</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="sub-menu-li four">
+            <div class="sub-menu-part">
+                <ul>
+                    <li id="sub-menu-first-line"><a href=""> Lifestyle</a><img src="images/side_menu/arrow.png" alt=""/></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Health & Fitmess</a></li>
+                    <li><a href=""> Travel & Leisure</a></li>
+                </ul>
+            </div>
+        </li>
+
+    </ul>
+
+</div>
+<div class="right-container">
+    <div class="follow-as">
+        <ul>
+            <li onmouseout="querySelector('img').src='images/rss/facebook_icon_normal.png'" onmouseover="querySelector('img')
+                .src='images/rss/facebook_icon_active.png'">
+                <a href=""><img src="images/rss/facebook_icon_normal.png" alt=""/>
+                    <span>Facebook</span></a>
+            </li>
+            <li onmouseout="querySelector('img').src='images/rss/twitter_icon_normal.png'" onmouseover="querySelector('img')
+                .src='images/rss/twitter_icon_active.png'">
+                <a href=""><img src="images/rss/twitter_icon_normal.png" alt=""/>
+                    <span>Twitter</span></a>
+            </li>
+            <li onmouseout="querySelector('img').src='images/rss/g+_icon_normal.png'" onmouseover="querySelector('img')
+                .src='images/rss/g+_icon_active.png'">
+                <a href=""><img src="images/rss/g+_icon_normal.png" alt=""/>
+                    <span>Google +</span></a>
+            </li>
+            <li onmouseout="querySelector('img').src='images/rss/rss_icon_normal.png'" onmouseover="querySelector('img')
+                .src='images/rss/rss_icon_active.png'">
+                <a href=""><img src="images/rss/rss_icon_normal.png" alt=""/>
+                    <span>RSS Feeds</span></a>
+            </li>
+            <li onmouseout="querySelector('img').src='images/rss/pinterest_icon_normal.png'" onmouseover="querySelector('img')
+                .src='images/rss/pinterest_icon_active.png'">
+                <a href=""><img src="images/rss/pinterest_icon_normal.png" alt=""/>
+                    <span>Pinterest</span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="fb-widget">
+        <ul>
+            <li><a href=""><img src="images/widget/facebook_icon_big.png" alt=""/></a></li>
+            <li style="text-align: left;margin-top: 40px"><a href=""> 156k <span> Follow<img  src="images/widget/f_follow.png" alt=""/></span></a></li>
+        </ul>
+
+    </div>
+    <div class="tw-widget">
+        <ul>
+            <li><a href=""><img src="images/widget/twitter_icon_big.png" alt=""/></a></li>
+            <li style="text-align: left;margin-top: 40px"><a href=""> 156k <span> Follow<img  src="images/widget/t_follow.png" alt=""/></span></a></li>
+        </ul>
+
+
+
+    </div>
+    <div class="sing-in">
+        <h1>Sing In</h1>
+        <h2>Just select your favorite social network to get started</h2>
+        <ul>
+            <li><a href=""><img src="images/social/f_icon.png" alt=""/></a></li>
+            <li><a href=""><img src="images/social/t_icon.png" alt=""/></a></li>
+            <li><a href=""><img src="images/social/g_icon.png" alt=""/></a></li>
+            <li><a href=""><img src="images/social/i_icon.png" alt=""/></a></li>
+        </ul>
+    </div>
+    <div class="join-newsletter">
+        <h1>Join the Newsletter </h1>
+        <h2>Sign up for our personalized daily newsletter</h2>
+        <ul>
+
+            <li>
+                <div class="input-box">
+                    <input type="text" name="email" id="email_address"  title="Email Address" class="long" id>
+                    <button class="btn-2">SING UP</button>
+                </div>
+
+            </li>
+        </ul>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+    </div>
+<div class="bx-slider">
+    <h3> Featured story</h3>
+    <h4> Now that the holiday gift-giving time is over,<br/> we're  sure many of our readers unwrapped some new conroles.</h4>
+    <button class="btn-3">VIEW MORE</button>
+    <ul class="bxslider">
+        <li><img src="images/slider/sl_img1.jpg" /></li>
+        <li><img src="images/slider/sl_img2.jpg" /></li>
+        <li><img src="images/slider/sl_img3.jpg" /></li>
+        <li><img src="images/slider/sl_img4.jpg" /></li>
+        </ul>
+</div>
+<div class="v-container">
+    <div class="v-container-1">
+        <img src="images/video.png" alt=""/>
+<h1>Best story you <br/> have ever heard </h1>
+<h2>24 minutes ago  </h2>
+
+<p class="more"> Lorem ipsum dolor sit amet, sed ad erat appetere definitionem, utamur repudiandae intellegebat sit ne. His graece legimus id, vel te vidisse malorum. Ad case aperiam vis, ei postulant repudiare sententiae has, mucius voluptatum usu no. An ignota iudicabit quo.
+    Pro agam movet interpretaris in, pri no quem oportere liberavisse.</p>
+
+    </div>
+    <div id="popupWrapper">
+        <div class="content">
+            <a href="javascript:void(0)" id="closeMe">X</a>
+            <h1>Best story you <br/> have ever heard </h1>
+            <h2>24 minutes ago</h2>
+
+            <p> Lorem ipsum dolor sit amet, sed ad erat appetere definitionem, utamur repudiandae intellegebat sit ne. His graece legimus id, vel te vidisse malorum. Ad case aperiam vis, ei postulant repudiare sententiae has, mucius voluptatum usu no. An ignota iudicabit quo.
+                Pro agam movet interpretaris in, pri no quem oportere liberavisse.</p>
+
+        </div>
+    </div>
+    <div class="v-container-2">
+        <ul>
+            <li onmouseout="querySelector('img').src='images/heart.png'" onmouseover="querySelector('img')
+                .src='images/heart_active.png'"><a href="#"> <img src="images/heart.png" alt=""/><br/>Like</a></li>
+            <li><a href="#"> <img src="images/clock.png" alt=""/><br/>Later</a></li>
+            <li><a href="#"> <img src="images/share.png" alt=""/><br/>Share</a></li>
+           
+        </ul>
+
+        <iframe style="  position: inherit;" width="560" height="300" src="https://www.youtube.com/embed/6v2L2UGZJAM" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+<div class="left-container">
+
+        <div class="like-share">
+            <ul>
+                <li class="left"><a href="#"> <img src="images/share.png" alt=""/><br/>1,325</a></li>
+                <li class="right"><a href="#"> <img src="images/heart_active.png" alt=""/><br/>685</a></li>
+
+            </ul>
+        </div>
+        <div class="tw-column">
+            <h1>Alex White  @alexwhite <img src="images/widget/t_follow.png" alt=""/></h1>
+            <ul>
+                <li>
+                    <p>Singolo is a free PSD template  of a flat, single page website created by @alexwhite</p>
+                    <h2>2 hours ago</h2>
+
+                </li>
+                <li>
+                    <p>Saturday Career Workshops  are back at ADC! See what high  school students created this week</p>
+                    <h2>6 hours ago</h2>
+                </li>
+            </ul>
+
+        </div>
+        <div class="news-slider">
+
+
+        </div>
+
+    </div>
+<div class="photo-container">
+        <div class="photo-container-1">
+            <img id="small-camera" src="images/photo.png" alt=""/>
+            <h1>Here's What <br/>Instagram Ads Will <br/>  Look Like  </h1>
+            <h2>3 hours ago</h2>
+
+            <p class="more"> Lorem ipsum dolor sit amet, sed ad erat appetere definitionem, utamur repudiandae intellegebat sit ne. His graece legimus id, vel te vidisse malorum. Ad case aperiam vis, ei postulant repudiare sententiae has, mucius voluptatum usu no. An ignota iudicabit quo.
+                Pro agam movet interpretaris in, pri no quem oportere liberavisse.</p>
+
+        </div>
+    <div id="popupWrapper2">
+        <div class="content">
+            <a href="javascript:void(0)" id="closeMe">X</a>
+            <h1>Here's What <br/>Instagram Ads Will <br/>  Look Like  </h1>
+            <h2>3 hours ago</h2>
+
+            <p> Lorem ipsum dolor sit amet, sed ad erat appetere definitionem, utamur repudiandae intellegebat sit ne. His graece legimus id, vel te vidisse malorum. Ad case aperiam vis, ei postulant repudiare sententiae has, mucius voluptatum usu no. An ignota iudicabit quo.
+                Pro agam movet interpretaris in, pri no quem oportere liberavisse.</p>
+
+        </div>
+    </div>
+        <div class="photo-container-2">
+            <img style="float: right" src="images/mak.jpg" alt=""/>
+        </div>
+    </div>
+<div class="calendar">
+
+
+</div><div class="view-ms">
+<h1>view <br/> more <br/> stories</h1>
+        <img src="images/arrow.png" alt=""/>
+    </div><div class="news-block">
+        <img style="position: absolute" src="images/new.png" alt=""/>
+
+        <div class="news-block-img">
+            <img src="images/news-img.jpg" alt=""/>
+
+        </div>
+        <div class="news-block-2">
+            <img id="news-icon"  src="images/article/article.png" alt=""/>
+            <h1>What is Lorem Ipsum?</h1>
+            <p class="read-more">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.
+                Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+
+            <ul>
+                <li style="margin-left: 65px"><img src="images/article/share.png" alt=""/> <span>569 shares</span></li>
+                <li style="margin-top: 4px"><img src="images/article/views.png" alt=""/> <span>3,152 views</span></li>
+                <li style="margin-top: 3px"><img src="images/article/comments.png" alt=""/> <span>21 coments</span></li>
+            </ul>
+        </div>
+    </div>
+<div class="quote">
+     <img src="images/quote.png" alt=""/>
+     <p>"Winter is coming"</p>
+
+ </div>
+<div class="tab-element">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
