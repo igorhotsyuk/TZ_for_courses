@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/jquery.bxslider.css"/>
        <script src="js/jquery.dd.min.js"></script>
     <script src="js/jquery-ui-1.9.2.custom.js"></script>
+    <script type="text/javascript" src="js/jquery.easy-ticker.js"></script>
 
 
 
@@ -41,7 +42,7 @@
                  <li>
             <label for="email_address" class="required">e-mail</label>
             <div class="input-box">
-                <input type="text" name="email" id="email_address"  title="Email Address" class="long">
+                <input type="text" name="email" id="emailid"  title="Email Address">
             </div>
                  </li>
                  <li>
@@ -65,7 +66,8 @@
 <div class="search-icon">
     <a href=""> <img src="images/menu/search_menu_icon.png" alt=""/></a>
 </div>
-</div><div class="header-expend">
+</div>
+<div class="header-expend">
         <div class="side-menu">
             <div class="side-menu-p1">
             <ul>
@@ -249,7 +251,7 @@
 
             <li>
                 <div class="input-box">
-                    <input type="text" name="email" id="email_address"  title="Email Address" class="long" id>
+                    <input type="text" name="email" id="emailid"  title="Email Address">
                     <button class="btn-2">SING UP</button>
                 </div>
 
@@ -262,9 +264,6 @@
 
 
 </div>
-
-
-
     </div>
 <div class="bx-slider">
     <h3> Featured story</h3>
@@ -311,15 +310,14 @@
     </div>
 </div>
 <div class="left-container">
-
-        <div class="like-share">
+    <div class="like-share">
             <ul>
                 <li class="left"><a href="#"> <img src="images/share.png" alt=""/><br/>1,325</a></li>
                 <li class="right"><a href="#"> <img src="images/heart_active.png" alt=""/><br/>685</a></li>
 
             </ul>
         </div>
-        <div class="tw-column">
+    <div class="tw-column">
             <h1>Alex White  @alexwhite <img src="images/widget/t_follow.png" alt=""/></h1>
             <ul>
                 <li>
@@ -334,12 +332,54 @@
             </ul>
 
         </div>
-        <div class="news-slider">
-
-
+    <div class="news-slider">
+        <h1>What's hot</h1>
+        <div class="nws-slider">
+            <ul>
+                <li>
+                    <img src="images/sliderpic.png" alt=""/>
+                    <h2>A New Yorker doesn't  necessarily come from...</h2>
+                    <h3> 3 minutes ago</h3>
+                </li>
+                <li>
+                    <img src="images/sliderpic.png" alt=""/>
+                    <h2>A New Yorker never  looks up... </h2>
+                    <h3>7 hours ago</h3>
+                </li>
+                <li>
+                    <img src="images/sliderpic.png" alt=""/>
+                    <h2>A New Yorker doesn’t  take cabs </h2>
+                    <h3>23 hours ago</h3>
+                </li>
+                <li>
+                    <img src="images/sliderpic.png" alt=""/>
+                    <h2>A New Yorker views  celebrities as regular...</h2>
+                    <h3> 1 day ago</h3>
+                </li>
+                <li>
+                    <img src="images/sliderpic.png" alt=""/>
+                    <h2>A New Yorker never  looks up...</h2>
+                    <h3> 2 days ago</h3>
+                </li>
+            </ul>
         </div>
 
-    </div>
+        </div>
+    ​<div class="feedback-box">
+<h1>Ask a Question</h1>
+    <div class="input-bloc w1">
+               <input type="text" placeholder="Your name" size="25" name="name" id="name" />
+        </div>
+    <div class="input-bloc w1">
+               <input type="text" placeholder="Your email" size="25" name="email" id="email_address" />
+        </div>
+    <div class="input-bloc msg">
+                <textarea name="message" placeholder="Your question..." cols="24" rows="8" id="message"></textarea>
+     </div>
+
+    <div style="margin-left: 30px"><button class="btn-2">SUBMIT</button></div>
+</div>
+</div>
 <div class="photo-container">
         <div class="photo-container-1">
             <img id="small-camera" src="images/photo.png" alt=""/>
@@ -365,16 +405,13 @@
             <img style="float: right" src="images/mak.jpg" alt=""/>
         </div>
     </div>
-<div class="calendar" id="datepicker" style="height: 100%">
-
-
+<div class="calendar" id="datepicker" >
 </div>
-
-    <div class="view-ms">
+<div class="view-ms">
 <h1>view <br/> more <br/> stories</h1>
         <img src="images/arrow.png" alt=""/>
     </div>
-    <div class="news-block">
+<div class="news-block">
         <img style="position: absolute" src="images/new.png" alt=""/>
             <div class="news-block-img">
                 <img src="images/news-img.jpg" alt=""/>
@@ -399,9 +436,106 @@
 
  </div>
 <div class="tab-element">
+    <div id="tabs">
+        <ul>
+            <li><a href="#fragment-1">About</a></li>
+            <li><a href="#fragment-2"> Team </a></li>
+            <li><a href="#fragment-3">Privacy</a></li>
+            <li><a href="#fragment-4">Advertise</a></li>
+            <li><a href="#fragment-5">Contact</a></li>
+        </ul>
+               <div id="fragment-1">
+                   <ul class="tab-column">
+                       <li>
+                           <img src="images/tabsimg.png" alt=""/>
+                           <h1>Anne Hathaway </h1>
+                           <h2>CEO / Founder</h2>
+                           <p>“Lorem Ipsum is simply dummy text  of the printing and typesetting industry.</p>
+                           <span>@annehethaway</span>
+                       </li>
+                       <li>
+                           <img src="images/tabsimg.png" alt=""/>
+                           <h1>Kate Upton </h1>
+                           <h2>Co-Founder </h2>
+                           <p>“Lorem Ipsum is simply dummy text  of the printing and typesetting industry.</p>
+                           <span>@kateupton</span>
+                       </li>
+                   </ul>
+                </div>
+        <div id="fragment-2">
+            <ul class="tab-column">
+                <li>
+                    <img src="images/tabsimg.png" alt=""/>
+                    <h1>Anne Hathaway </h1>
+                    <h2>CEO / Founder</h2>
+                    <p>“Lorem Ipsum is simply dummy text  of the printing and typesetting industry.</p>
+                    <span>@annehethaway</span>
+                </li>
+                <li>
+                    <img src="images/tabsimg.png" alt=""/>
+                    <h1>Kate Upton </h1>
+                    <h2>Co-Founder </h2>
+                    <p>“Lorem Ipsum is simply dummy text  of the printing and typesetting industry.</p>
+                    <span>@kateupton</span>
+                </li>
+            </ul>
+        </div>
+        <div id="fragment-3">
+            <ul class="tab-column">
+                <li>
+                    <img src="images/tabsimg.png" alt=""/>
+                    <h1>Anne Hathaway </h1>
+                    <h2>CEO / Founder</h2>
+                    <p>“Lorem Ipsum is simply dummy text  of the printing and typesetting industry.</p>
+                    <span>@annehethaway</span>
+                </li>
+                <li>
+                    <img src="images/tabsimg.png" alt=""/>
+                    <h1>Kate Upton </h1>
+                    <h2>Co-Founder </h2>
+                    <p>“Lorem Ipsum is simply dummy text  of the printing and typesetting industry.</p>
+                    <span>@kateupton</span>
+                </li>
+            </ul>
+        </div>
+        <div id="fragment-4">
+            <ul class="tab-column">
+                <li>
+                    <img src="images/tabsimg.png" alt=""/>
+                    <h1>Anne Hathaway </h1>
+                    <h2>CEO / Founder</h2>
+                    <p>“Lorem Ipsum is simply dummy text  of the printing and typesetting industry.</p>
+                    <span>@annehethaway</span>
+                </li>
+                <li>
+                    <img src="images/tabsimg.png" alt=""/>
+                    <h1>Kate Upton </h1>
+                    <h2>Co-Founder </h2>
+                    <p>“Lorem Ipsum is simply dummy text  of the printing and typesetting industry.</p>
+                    <span>@kateupton</span>
+                </li>
+            </ul>
+        </div>
+        <div id="fragment-5">
+            <ul class="tab-column">
+                <li>
+                    <img src="images/tabsimg.png" alt=""/>
+                    <h1>Anne Hathaway </h1>
+                    <h2>CEO / Founder</h2>
+                    <p>“Lorem Ipsum is simply dummy text  of the printing and typesetting industry.</p>
+                    <span>@annehethaway</span>
+                </li>
+                <li>
+                    <img src="images/tabsimg.png" alt=""/>
+                    <h1>Kate Upton </h1>
+                    <h2>Co-Founder </h2>
+                    <p>“Lorem Ipsum is simply dummy text  of the printing and typesetting industry.</p>
+                    <span>@kateupton</span>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
-
-
 </div>
 </body>
 </html>

@@ -70,4 +70,33 @@ $(document).ready(function() {
         $('#popupWrapper').hide();
     });
 
+    $( "#tabs" ).tabs();
+
+           $('.nws-slider').easyTicker({
+            direction: 'up', // up or down
+            easing: 'swing', // easing function
+            speed: 'slow', // the speed of transition
+            interval: 5000, // the time for the next transition to take place.
+            height: 'auto', // the height of the elements
+            visible: 0, // the number of visible elements of the list
+            mousePause: 1, // pause on mouse hover
+            controls:{ // assign the elements which control the transition.
+                up: '',
+                down: '',
+                toggle: ''
+            }
+        });
+    $('#emailid').focusout(function(){
+
+        $('#emailid').filter(function(){
+            var emil=$('#emailid').val();
+            var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            if( !emailReg.test( emil ) ) {
+                alert('Please enter valid email');
+            } else {
+                alert('Thank you for your valid email');
+            }
+        })
+    });
+
 });
